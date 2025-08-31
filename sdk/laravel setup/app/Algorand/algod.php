@@ -202,7 +202,7 @@ class algod {
                 case 404:
                     $this->error = 'NOT FOUND';
                     break;
-                case 404:
+                case 405:
                     $this->error = 'NOT ALLOWED';
                     break;
             }
