@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0c1020" />
+    <meta
+      name="description"
+      content="Totul — адаптивный двуязычный сайт (русский/румынский) с современным UI и чистой HTML/CSS/JS архитектурой."
+    />
+    <title>Totul — Digital Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip" data-i18n="skip">Перейти к контенту</a>
+
+    <header class="header">
+      <div class="container nav">
+        <a class="logo" href="#home" aria-label="Totul Home">Totul</a>
+
+        <button class="burger" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav id="menu" class="menu" aria-label="Main navigation">
+          <a href="#about" data-i18n="nav.about">О нас</a>
+          <a href="#services" data-i18n="nav.services">Услуги</a>
+          <a href="#process" data-i18n="nav.process">Процесс</a>
+          <a href="#contacts" data-i18n="nav.contacts">Контакты</a>
+          <button class="btn btn--small" id="langToggle" type="button" aria-live="polite">RO</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero section">
+        <div class="container hero__layout">
+          <div>
+            <p class="pill" data-i18n="hero.badge">Профессиональная digital-команда</p>
+            <h1 data-i18n="hero.title">Дизайн и разработка сайтов под ключ</h1>
+            <p class="hero__text" data-i18n="hero.text">
+              Создаём быстрые и адаптивные интерфейсы для бизнеса: продуманная UX-архитектура, современный UI и чистый код.
+            </p>
+            <div class="hero__actions">
+              <a href="#contacts" class="btn" data-i18n="hero.ctaPrimary">Обсудить проект</a>
+              <a href="#services" class="btn btn--ghost" data-i18n="hero.ctaSecondary">Что мы делаем</a>
+            </div>
+            <ul class="hero__metrics">
+              <li><strong>+60</strong><span data-i18n="hero.metric1">успешных запусков</span></li>
+              <li><strong>98%</strong><span data-i18n="hero.metric2">довольных клиентов</span></li>
+              <li><strong>&lt;1.2s</strong><span data-i18n="hero.metric3">средняя загрузка</span></li>
+            </ul>
+          </div>
+          <aside class="hero-card" aria-label="Project highlights">
+            <h2 data-i18n="heroCard.title">Почему Totul</h2>
+            <ul>
+              <li data-i18n="heroCard.item1">Адаптив под все устройства</li>
+              <li data-i18n="heroCard.item2">Поддержка русского и румынского</li>
+              <li data-i18n="heroCard.item3">SEO-friendly структура</li>
+              <li data-i18n="heroCard.item4">Готово к масштабированию</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container grid-2">
+          <div>
+            <h2 data-i18n="about.title">О проекте</h2>
+            <p data-i18n="about.text1">
+              Мы сделали архитектуру лендинга удобной для роста: можно легко добавлять новые блоки, формы и интеграции.
+            </p>
+            <p data-i18n="about.text2">
+              Весь интерфейс оптимизирован для телефонов, планшетов и десктопов, а тексты переключаются одним кликом.
+            </p>
+          </div>
+
+          <div class="stats-grid">
+            <article class="stat-card"><strong>100%</strong><span data-i18n="about.item1">адаптивная вёрстка</span></article>
+            <article class="stat-card"><strong>2</strong><span data-i18n="about.item2">языка интерфейса</span></article>
+            <article class="stat-card"><strong>AA</strong><span data-i18n="about.item3">контраст по accessibility</span></article>
+            <article class="stat-card"><strong>0</strong><span data-i18n="about.item4">зависимостей JS-фреймворков</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section section--alt">
+        <div class="container">
+          <h2 data-i18n="services.title">Услуги</h2>
+          <div class="cards">
+            <article class="card">
+              <h3 data-i18n="services.card1.title">UI/UX дизайн</h3>
+              <p data-i18n="services.card1.text">Прототипирование, дизайн-система и визуальная концепция для web/mobile.</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="services.card2.title">Frontend разработка</h3>
+              <p data-i18n="services.card2.text">Чистая адаптивная HTML/CSS/JS вёрстка с упором на производительность.</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="services.card3.title">Поддержка и рост</h3>
+              <p data-i18n="services.card3.text">Подключение аналитики, SEO-улучшения, новые разделы и A/B-гипотезы.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section">
+        <div class="container">
+          <h2 data-i18n="process.title">Как мы работаем</h2>
+          <ol class="timeline">
+            <li>
+              <span>01</span>
+              <div>
+                <h3 data-i18n="process.step1.title">Бриф и цели</h3>
+                <p data-i18n="process.step1.text">Формируем требования, аудиторию и метрики результата.</p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h3 data-i18n="process.step2.title">Дизайн и контент</h3>
+                <p data-i18n="process.step2.text">Готовим визуальный стиль, тексты и структуру страниц.</p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h3 data-i18n="process.step3.title">Разработка и QA</h3>
+                <p data-i18n="process.step3.text">Верстаем, тестируем на разных устройствах и выпускаем в прод.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="contacts" class="section section--alt">
+        <div class="container contact">
+          <div>
+            <h2 data-i18n="contacts.title">Готовы обсудить ваш проект?</h2>
+            <p data-i18n="contacts.text">Напишите нам и получите план реализации с оценкой сроков.</p>
+          </div>
+          <div class="contact__actions">
+            <a href="mailto:hello@totul.site" class="btn" data-i18n="contacts.cta">Написать на почту</a>
+            <a href="tel:+37300000000" class="btn btn--ghost">+373 00 000 000</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__wrap">
+        <span>© <span id="year"></span> Totul</span>
+        <span data-i18n="footer.rights">Все права защищены</span>
+      </div>
+    </footer>
+
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
